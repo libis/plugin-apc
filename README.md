@@ -1,3 +1,4 @@
+https://travis-ci.org/libis/plugin-apc.png
 plugin-apc
 ==========
 
