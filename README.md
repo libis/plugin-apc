@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/libis/plugin-apc.png)](https://travis-ci.org/libis/plugin-apc)
 plugin-apc
 ==========
 
