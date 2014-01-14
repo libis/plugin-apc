@@ -21,15 +21,7 @@ before_script:
   - pear channel-discover pear.pdepend.org
   - pear install --alldeps phpmd/PHP_PMD
   - phpenv rehash
-  - ./.travis.setup.sh
-  - "export DISPLAY=:99.0"
-  - "sh -e /etc/init.d/xvfb start"
-
-env:
- - OMEKA_BRANCH=master
-
 script:
-  - ./.travis.tests.sh
   - phpunit -c application/tests/phpunit.xml
   - phpcs --standard=PSR2 --extensions=php --ignore=*/libraries/*,*/archive/* .
   - phpmd . text codesize,unusedcode,naming,design --ignore=application/libraries/,application/archive/
