@@ -11,4 +11,4 @@ fi
 echo "Plugin Directory: $PLUGIN_DIR"
 echo "Omeka Directory: $OMEKA_DIR"
 
-cd tests/ && phpunit --configuration phpunit_travis.xml --coverage-text
+cd tests/ && phpunit --configuration phpunit.xml --coverage-text
