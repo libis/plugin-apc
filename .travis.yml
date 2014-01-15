@@ -32,7 +32,7 @@ env:
 
 script:
   - ./.travis.tests.sh
-  - phpcs --standard=PSR2 --extensions=php --ignore=*/libraries/*,*/archive/* .
-  - phpmd . text codesize,unusedcode,naming,design --ignore=application/libraries/,application/archive/
+  - phpmd . text codesize,unusedcode,naming,design
   - phpcpd .
   - phpdcd .
+  - phpcs --standard=PSR2 --extensions=php .
